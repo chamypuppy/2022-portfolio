@@ -1,0 +1,35 @@
+/* introduce me - pudding content 01*/
+
+@font-face {
+  font-family: 'LeeSeoyun';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pudding__content-introduce-title {
+  font-family: 'LeeSeoyun';
+  font-size: 30px;
+}
+
+/* 내 소개 총괄 */
+.pudding__content-introdution {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  margin-top: 200px;
+}
+
+/* 내 소개 문구 */
+.pudding__content-introduce-title {
+  margin-top: 70px;
+  font-size: 35px;
+  font-style: italic;
+}
+
+/* 내 사진 */
+.pudding_me-img {
+  width: 400px;
+  /* position: absolute;
+  right: 70px; */
+}

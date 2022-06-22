@@ -1,0 +1,9 @@
+.pudding__home-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.pudding__home-list li {
+  margin-right: 30px;
+}

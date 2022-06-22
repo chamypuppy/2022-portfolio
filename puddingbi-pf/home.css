@@ -1,0 +1,83 @@
+.pudding__home-main-box {
+  width: 100%;
+  height: 850px;
+  background-color: #000;
+  padding-top: 30px;
+}
+
+.pudding__home-title {
+  font-size: 50px;
+  font-family: 'Gugi', cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  /* text-shadow:2px 1px 1px rgb(167, 155, 155); */
+  /* background: linear-gradient(to right top, #861657, #ffa69e); */
+  /* background: linear-gradient(to right top, #ffe4a1, #410e0a); */
+  background: linear-gradient(to right top, #ffe29a, #ffe29a, #410e0a, #410e0a);
+  /* background: linear-gradient(to right top, #fffd7bdf, #0a2841); */
+  color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px #84767543;
+  margin-bottom: 12px;
+}
+
+.pudding__home-title-text {
+  font-size: 65px;
+}
+
+
+
+
+.pudding__home-img-box {
+  position: relative;
+}
+
+.pudding__home-img,
+.pudding__home-img-box-wave,
+.pudding__home-img-box-boat {
+  /* width: 700px; */
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -25%);
+  /* left: 650px; */
+}
+
+.pudding__home-img-box-wave {
+  position: absolute;
+  z-index: 1;
+}
+
+.pudding__home-img-wave {
+  animation: wave 1s infinite ease-in-out alternate;
+}
+
+.pudding__home-img-boat {
+  animation: wave 0.8s infinite ease-in-out alternate;
+}
+
+/* @keyframes boat {
+  from {
+    left: 10%;
+    transform: translatey(0px);
+    -webkit-transform: rotate(10deg); 
+  }
+
+  to {
+    left: 15%;
+    transform: translatey(-20px);
+  }
+} */
+
+@keyframes wave {
+  from {
+    left: 10%;
+    transform: translatey(0px);
+    -webkit-transform: rotate(5deg); 
+  }
+
+  to {
+    left: 15%;
+    transform: translatey(-20px);
+  }
+}
