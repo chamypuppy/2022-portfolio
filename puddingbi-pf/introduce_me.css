@@ -7,6 +7,19 @@
   font-style: normal;
 }
 
+/* @font-face {
+  font-family: 'KoPubDotumMedium';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+.pudding__content-box-01 {
+  background-color: rgb(255, 247, 161);
+  /* background-color: rgb(255, 252, 216); */
+  /* background-color: rgb(255, 243, 205); */
+}
+
 .pudding__content-introduce-title {
   font-family: 'LeeSeoyun';
   font-size: 30px;
@@ -15,21 +28,30 @@
 /* 내 소개 총괄 */
 .pudding__content-introdution {
   display: flex;
-  justify-content: space-evenly;
-  /* align-items: center; */
-  margin-top: 200px;
+  /* justify-content: space-evenly; */
+  /* margin-top: 200px; */
+  padding: 200px 150px 200px 150px;
 }
 
 /* 내 소개 문구 */
 .pudding__content-introduce-title {
-  margin-top: 70px;
+  margin-top: 80px;
   font-size: 35px;
   font-style: italic;
 }
 
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+.pudding__content-introduce-subtitle {
+  /* font-family: 'KoPubDotumMedium'; */
+  font-family: 'NanumSquare';
+  font-size: 20px;
+}
+
+
+
 /* 내 사진 */
 .pudding_me-img {
   width: 400px;
-  /* position: absolute;
-  right: 70px; */
+  margin-left: 100px;
 }
