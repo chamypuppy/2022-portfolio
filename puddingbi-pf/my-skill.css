@@ -16,10 +16,10 @@
   /* width: 1200px;
   height: 600px; */
   width: 55%;
-  height: 60%;
+  height: 50%;
   background-color: rgb(255, 251, 246);
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%; 
   transform: translate(-48%, 270%);
   box-shadow: 3px 3px 10px 5px rgba(128, 128, 128, 0.362);
@@ -30,6 +30,10 @@
   font-size: 40px;
   padding-top: 45px;
   text-align: center;
+}
+
+.pudding__content-skill-subtitle {
+  font-size: 25px;
 }
 
 .pudding__content-skill-subtitle-box {
@@ -47,7 +51,8 @@
 /* 푸딩 도장 */
 .pudding__skill-html {
   display: flex;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-top: 25px;
 }
 
 .pudding__skill-css,
@@ -100,36 +105,46 @@
 }
 
 
-/* 푸딩비 스킬들 세부사항 기록 */
-.pudding__skills-record-box {
-  position: relative;
+/* 푸딩비 스킬들 세부사항 기록 - 레이어창 */
+.pudding__content-skill-pop-up-box {
+  /* position: relative; */
 }
 
-.pudding__skills-record {
-  position: absolute;
-  top: 550px;
-  left: 500px;
-  font-size: 30px;
+
+
+/* 스킬들 아코디언 팝업창 */
+.accordion {
   font-family: 'IM_Hyemin-Bold';
-  /* transform: translate(150%, 150%); */
+  position: absolute;
+  bottom: -100px;
+  background-color:rgba(255, 255, 255, 0);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  transition: 0.5s;
+  text-align: left;
+  padding:10px;
+  font-size: 20px;
 }
 
-/* .skill_line-star {
-  width: 50px;
-  height: 50px;
-} */
-
-.skill_star-icon {
-  color: #ffe8a5;
-  color: #ffe69a;
-  font-size: 80%;
-  text-shadow: 3px 3px 10px 5px rgba(128, 128, 128, 0.362);
-  transition: all 0.5s linear;
-  transition: all 0.5s ease-in-out;
+.accordion-icon {
+  font-size: 25px;
 }
 
-.skill_star-icon:hover {
-  transform: rotateY(180deg);
-  color: #6f3510;
-  /* transform: color rotateX( 180deg ); */
+
+.accordion_click-pop-up {
+  position: absolute;
+  top: 560px;
+  padding: 0 18px;
+  /* background-color: #f7f7f7; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* border-top:1px solid #F0F0F0; */
+  /* color:#666666; */
+  background-color: rgba(255, 251, 246, 0.477);
+  border-radius: 15px;
 }
+
+/* 달별 클릭 시 색 유지되게 하기*/
