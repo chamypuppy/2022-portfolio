@@ -7,15 +7,18 @@
 /* 푸딩비 홈 타이틀+배경*/
 @import "home.css";
 
-/* 푸딩비 첫 컨텐츠 (1페이지) */
+/* 푸딩비 컨텐츠*/
 @import "introduce_me.css";
 @import "my-skill.css";
+@import "project.css";
+@import "media_query.css";
+
 
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
   /* font-family: 'Noto Serif KR', serif; */
-  font-family: 'Gugi', cursive;
+  font-family: 'IM_Hyemin-Bold';
   margin: 0;
 }
 

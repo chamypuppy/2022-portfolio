@@ -1,0 +1,63 @@
+@media screen and (max-width: 2259px) {
+  body {
+    /* background-color: #000; */
+  }
+  /* 푸딩비 홈 (메인 화면) */
+  .pudding__home-title-text {
+    font-size: 1.2em;
+  }
+  .pudding__home-img-boat {
+    width: 550px;
+  }
+  .pudding__home-img-wave {
+    width: 550px;
+  }
+  .pudding__home-main-box {
+    height: 750px;
+  }
+  /* 푸딩비 소개 (나의 푸딩비 - 1페이지) */
+  .pudding__content-introdution {
+    padding: 130px 150px 130px 150px;
+  }
+  .pudding__content-introduce-title {
+    margin-top: 90px;
+    font-size: 1.96em;
+    margin-bottom: 45px;
+  }
+  .pudding__content-introduce-subtitle {
+    font-size: 1.05em;
+    line-height: 1.25em;
+  }
+  /* 푸딩비 스킬들 - 2페이지 */
+  .pudding__content-skill-box {
+    top: 80%;
+    width: 55%;
+    height: 65%;
+  }
+  .pudding__content-skill-title {
+    font-size: 2.2em;
+    text-align: center;
+  }
+  .pudding__content-skill-subtitle {
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  .pudding__skill-css-font{
+    margin-right: 105px;
+  }
+  .pudding__skill-js-font {
+    margin-right: 9px;
+  }
+  .pudding__gray-stamp {
+    width: 80px;
+    height: 80px;
+  }  
+  .skill-info-icon {
+    width: 25px;
+    margin-top: 3px;
+  }
+  .skills_detailed,
+  .accordion-icon {
+    font-size: 0.9em;
+  }
+}

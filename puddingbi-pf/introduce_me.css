@@ -20,11 +20,6 @@
   /* background-color: rgb(255, 243, 205); */
 }
 
-.pudding__content-introduce-title {
-  font-family: 'LeeSeoyun';
-  font-size: 30px;
-}
-
 /* 내 소개 총괄 */
 .pudding__content-introdution {
   display: flex;
@@ -33,14 +28,17 @@
   padding: 200px 150px 200px 150px;
 }
 
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
 /* 내 소개 문구 */
 .pudding__content-introduce-title {
+  font-family: 'LeeSeoyun';
+  /* font-size: 30px; */
   margin-top: 80px;
   font-size: 35px;
   font-style: italic;
 }
-
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 .pudding__content-introduce-subtitle {
   /* font-family: 'KoPubDotumMedium'; */

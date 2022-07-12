@@ -1,4 +1,5 @@
 .pudding__home-list {
+  font-family: 'Gugi', cursive;
   display: flex;
   /* justify-content: flex-end; */
   list-style: none;

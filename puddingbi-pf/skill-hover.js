@@ -46,4 +46,3 @@ const acc = document.getElementsByClassName("accordion");
 	 
 		  }
 	}
-

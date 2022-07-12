@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>푸딩비의 포트폴리오 탐험 여행!</title>
+
 </head>
 
 <body>
@@ -17,19 +18,19 @@
       <nav>
         <ul class="pudding__home-list">
           <a href="#explore_me">
-            <li>나의 푸딩비</li>
+            <li class="nav_my-puddingb">나의 푸딩비</li>
           </a>
           <a href="#skill">
-            <li>skill</li>
+            <li class="nav_my-skills">skill</li>
           </a>
           <a href="#project">
-            <li>project</li>
+            <li class="nav_my-project">project</li>
           </a>
           <a href="#future_me">
-            <li>미래의 푸딩비</li>
+            <li class="nav_my-future">미래의 푸딩비</li>
           </a>
           <a href="#contact">
-            <li>contact</li>
+            <li class="nav_">contact</li>
           </a>
         </ul>
 
@@ -162,14 +163,14 @@
               </div>
 
 
-              <!-- 스킬들 레이어 팝업 창 -->
+              <!-- 스킬들 레이어 팝업 창 - 세부 스킬 사항 -->
               <div class="pudding__content-skill-pop-up-box">
 
                 <button class="accordion">
                   <h1>
                     <i class="fas fa-moon accordion-icon"></i>
                     <i class="fas fa-star accordion-icon"></i>
-                    <span>자세한 스킬 사항</span>
+                    <span class="skills_detailed">세부 스킬 사항</span>
                   </h1>
 
                 </button>
@@ -181,7 +182,6 @@
                     시멘틱 태그의 의미와 사용 이유에 대해 알고 있습니다. <br />
                     < head> 태그와 < body> 태그의 용도와 차이가 무엇인지 이해하고 있습니다.
                   </p>
-
                   <h2>css</h2>
                   <p>HTML문서에서 link를 거는 위치를 알고 있고 여러 css 파일이 있는 경우 link 문장을 여럿 사용보다 (통상적인 이름의 파일)style.css과 같이 여러 css파일을
                     연결 시켜주는 큰 범주의 css를 HTML과 연결 시킨 후, 나머지 css 파일들을 큰 css 파일에 @import시키는 방법을 알고 있습니다. <br />
@@ -192,13 +192,32 @@
                     연결 시켜주는 큰 범주의 css를 HTML과 연결 시킨 후, 나머지 css 파일들을 큰 css 파일에 @import시키는 방법을 알고 있습니다.</p>
                 </div>
               </div>
+
+
+
             </section>
 
 
           </div>
 
+          <!-- 푸딩비 세 번째 컨텐츠 (3페이지) - 푸딩비 프로젝트 소개 -->
+          <div class="pudding__content-box-03">
+            <section class="pudding__content-project">
+              <h1 class="pudding__content-project-title">프로젝트</h1>
+              <div id="slideShow">
+                <ul class="slides">
+                  <li><img class="pudding_project-gif pudding_talk-gif" src="img/pudding_talk-gif.gif"></li>
+                  <li><img class="pudding_project-gif js_challenge-gif" src="img/js_challenge-gif.gif"></li>
+                </ul>
 
-          <!-- 푸딩비 스킬들 세부사항 기록 -->
+                <p class="controller">
+                  <span class="prev">&lang;</span>  
+                  <span class="next">&rang;</span>
+                </p>
+              </div>
+            </section>
+          </div>
+
 
 
           </article>
@@ -206,6 +225,7 @@
           <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
           <script src="script.js"></script>
           <script src="skill-hover.js"></script>
+          <script src="project_slide.js"></script>
 </body>
 
 </html>
