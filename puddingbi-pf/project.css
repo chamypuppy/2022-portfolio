@@ -1,6 +1,6 @@
 .pudding__content-box-03 {
-  background-color: rgb(159, 214, 155);
-  height: 800px;
+  /* background-color: rgb(159, 214, 155); */
+  height: 2000px;
   /* margin-top: 100px; */
 }
 
@@ -12,14 +12,16 @@
 }
 
 .pudding_talk-gif {
-  width: 300px;
-  height: 625px;
+  width: 250px;
+  height: 609px;
+  height: 509px;
 }
 
 .js_challenge-gif {
-  /* width: 700px; */
-  width: 500px;
+  width: 700px;
   height: 400px;
+  margin-top: 110px;
+  margin-left: 197px;
 }
 
 li{
@@ -29,9 +31,9 @@ li{
 /* 보여줄 구간의 높이와 넓이 설정 */
 #slideShow{
   width: 900px;
-  height: 625px;
+  height: 825px;
   position: relative;
-  /* margin: 50px auto; */
+  margin: 50px auto;
   overflow: hidden;   
   /*리스트 형식으로 이미지를 일렬로 
   정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
@@ -48,20 +50,62 @@ li{
   /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 }
 
+.project_subtitle-pudding-talk {
+  font-family: 'NanumSquare';
+}
+
+
+
+.project_title-pudding-talk {
+  margin-left: 20.5%;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 25px;
+  width: 10%;
+}
+
+.slide_project-title  {
+  margin-left: 18%;
+}
+
+.project_subtitle-pudding-talk {
+  margin-left: 7%;
+  width: 600px;
+  font-size: 17px; 
+}
+
+.github-icon {
+  margin-left: 21%;
+  margin-bottom: 30px;
+}
+
+.project_title-js-challenge {
+  text-align: center;
+  width: 30%;
+}
+
+
+
 /* 첫 번째 슬라이드 가운데에 정렬하기위해
 첫번째 슬라이드만 margin-left조정 */
 .slides li:first-child{
   margin-left: 100px;
+  margin-left: 70px;
 }
 
 /* 슬라이드들 옆으로 정렬 */
 .slides li:not(:last-child){
-  float: left;
+  /* float: left; */
   margin-right: 100px;
+  margin-right: 300px;
+  margin-left: 60px;
 }
 
 .slides li{
   float: left;
+  width: 700px;
+  display: flex;
+  justify-content: center;
 }
 
 .controller span{

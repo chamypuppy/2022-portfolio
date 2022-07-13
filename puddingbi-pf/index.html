@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media_query.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +19,19 @@
       <nav>
         <ul class="pudding__home-list">
           <a href="#explore_me">
-            <li class="nav_my-puddingb">나의 푸딩비</li>
+            <li class="nav-size nav_my-puddingb">나의 푸딩비</li>
           </a>
           <a href="#skill">
-            <li class="nav_my-skills">skill</li>
+            <li class="nav-size nav_my-skills">skill</li>
           </a>
           <a href="#project">
-            <li class="nav_my-project">project</li>
+            <li class="nav-size nav_my-project">project</li>
           </a>
           <a href="#future_me">
-            <li class="nav_my-future">미래의 푸딩비</li>
+            <li class="nav-size nav_my-future">미래의 푸딩비</li>
           </a>
           <a href="#contact">
-            <li class="nav_">contact</li>
+            <li class="nav-size nav_">contact</li>
           </a>
         </ul>
 
@@ -60,7 +61,7 @@
           <img class="pudding__home-img-wave" src="img/wave_cut_shadow.png" />
         </div>
         <div class="pudding__home-img-box-boat">
-          <img class="pudding__home-img-boat" src="img/puddingbi+wave-shadow.png"" />
+          <img class="pudding__home-img-boat" src="img/puddingbi+wave-shadow.png" />
         </div>
   </div>
 </div>
@@ -74,12 +75,12 @@
             <section class="pudding__content-introdution">
               <div class="pudding__content-introduce-title-box">
                 <h1 class="pudding__content-introduce-title">"웹에 접속만 해도 탐험하는 것 같은 즐거움을 주고 싶은 개발자, <br>박보영입니다!"</h1>
-                <p class="pudding__content-introduce-subtitle">안녕하세요! 저는 웹과 사용자간의 재미있는 의사소통을 기획하고 싶은 프론트엔드 개발자 박보영입니다.
+                <p class="pudding__content-introduce-subtitle media_query-1">안녕하세요! 저는 웹과 사용자간의 재미있는 의사소통을 기획하고 싶은 프론트엔드 개발자 박보영입니다.
                 </p>
-                <p class="pudding__content-introduce-subtitle">
+                <p class="pudding__content-introduce-subtitle media_query-2">
                   웹은 단순히 해바라기처럼 나의 일방적인 소통으로만 이루어진다고 생각했던 제게, 보여지는 시각적인 면뿐이 아닌 보이지 않는 미묘한 동작들이 주는 진정한 아름다움과 즐거움을
                   가르쳐주었습니다. </p>
-                <p class="pudding__content-introduce-subtitle"> 마치 단절되고 일방적인 관계처럼 느껴지던 웹 세상에서 다양한 애니메이션 모션들, 기다리는 데에 재미를
+                <p class="pudding__content-introduce-subtitle media_query-3"> 마치 단절되고 일방적인 관계처럼 느껴지던 웹 세상에서 다양한 애니메이션 모션들, 기다리는 데에 재미를
                   더한 동적인 모형들, 스크롤을 내리면 내가 찾는 정보를 재미있게 탐색시켜주는 다양한 반응들 등의 등장으로 사용자는 더 이상 웹을 혼자서 탐색하지 않고 face to face로
                   실시간으로 이루어지는 서로 간의 역동적인 소통에 단순히 보여지는 면을 넘어서서
                   <!-- 클릭(기능)만의 -->웹을 탐험하는 것 같은 즐거움을 선사하는 프론트엔드 개발자에 큰 매력을 느끼게 되었습니다.
@@ -206,8 +207,15 @@
               <h1 class="pudding__content-project-title">프로젝트</h1>
               <div id="slideShow">
                 <ul class="slides">
+                  <div class="slide_project-title project_title-pudding-talk">벚꽃 푸딩톡</div>
+                  <a href="https://github.com/chamypuppy/kokoa-clone/commit/c2d6ccf4a2d815a65687043abf8a1ae66e43d216"><i class="fab fa-github github-icon fa-2x"></i></a>
+                  <div class="slide_project-title project_title-pudding-talk project_subtitle-pudding-talk">HTML과 CSS 그리고 약간의 Javascript 언어를 연습하기 위해 <br/> 카카오톡을 클론 코딩하였습니다.</div>
                   <li><img class="pudding_project-gif pudding_talk-gif" src="img/pudding_talk-gif.gif"></li>
-                  <li><img class="pudding_project-gif js_challenge-gif" src="img/js_challenge-gif.gif"></li>
+                  <li>
+                  <div class="slide_project-title project_subtitle-pudding-talk project_title-js-challenge">노마드코더 JS 챌린지</div>
+                  <a href="https://github.com/chamypuppy/kokoa-clone/commit/c2d6ccf4a2d815a65687043abf8a1ae66e43d216"><i class="fab fa-github github-icon fa-2x"></i></a>
+                  <div class="slide_project-title project_subtitle-pudding-talk project_title-js-challenge">노마드코더 JS 챌린지</div>
+                  <img class="pudding_project-gif js_challenge-gif" src="img/js_challenge-gif.gif"></li>
                 </ul>
 
                 <p class="controller">
