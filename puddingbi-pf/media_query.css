@@ -1,4 +1,109 @@
-@media screen and (max-width: 2259px) {
+@media screen and (max-width: 1500px) {
+  /* 푸딩비 스킬 - 2페이지 */
+  .pudding__content-skill-title {
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .pudding__content-skill-subtitle {
+    font-size: 1.3em;
+    font-size: 150.0%;
+  }
+  .pudding__content-skill-subtitle {
+    margin: 40px 60px;
+    margin: 40px 15px;
+    /* font-size: 25px; */
+  }
+  /* 푸딩 도장 */
+.pudding__skill-html {
+  display: flex;
+  /* margin-top: 50px; */
+  margin-top: 25px;
+}
+.pudding__skill-html-font {
+  margin-right: 95px;
+}
+
+.pudding__skill-css-font{
+  margin-right: 110px;
+}
+
+.pudding__skill-js-font {
+  /* margin-right: 20px; */
+  margin-right: 3px;
+  /* font-size: 27px; */
+}
+.pudding__skill-title-box {
+  display: flex;
+  align-items: center;
+  margin-left: 32px; /* skill_line-star시 */
+  /* margin-left: 40px; */
+}
+.skill-info-icon {
+  width: 30px;
+  /* width: 11.5%; */
+  cursor: pointer;
+}
+
+.pudding__gray-stamp {
+  /* width: 90px;
+  height: 90px; */
+  width: 13%;
+  /* height: 84%; */
+  /* margin-right: 3px; */
+}
+
+.pudding__stamp-box-js {
+  width: 90%;
+  height: 30%;
+  margin-left: 5px;
+}
+/* js 챌린지 수료증 */
+.js_certificate {
+  width: 600px;
+  height: 500px;
+  display: none;
+  position: absolute;
+  transform: translate(26%, 10%);
+  z-index: 1;
+  /* transition효과 추가하기 */
+}
+/* 스킬들 아코디언 팝업창 */
+.accordion {
+  font-family: 'IM_Hyemin-Bold';
+  position: absolute;
+  bottom: -100px;
+  background-color:rgba(255, 255, 255, 0);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  transition: 0.5s;
+  text-align: left;
+  padding:10px;
+  font-size: 20px;
+}
+
+.accordion-icon {
+  font-size: 25px;
+}
+
+.accordion_click-pop-up {
+  position: absolute;
+  top: 600px;
+  padding: 0 18px;
+  /* background-color: #f7f7f7; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* border-top:1px solid #F0F0F0; */
+  /* color:#666666; */
+  background-color: rgba(255, 251, 246, 0.477);
+  border-radius: 15px;
+}
+}
+
+@media screen and (min-width:1121px) and (max-width: 1500px) {
   body {
     /* background-color: #000; */
   }
@@ -18,6 +123,7 @@
   /* 푸딩비 소개 (나의 푸딩비 - 1페이지) */
   .pudding__content-introdution {
     padding: 130px 150px 130px 150px;
+    padding: 130px 110px 130px 110px;
   }
   .pudding__content-introduce-title {
     margin-top: 90px;
@@ -28,37 +134,11 @@
     font-size: 1.05em;
     line-height: 1.25em;
   }
-  /* 푸딩비 스킬들 - 2페이지 */
-  .pudding__content-skill-box {
-    top: 80%;
-    width: 55%;
-    height: 65%;
-  }
-  .pudding__content-skill-title {
-    font-size: 2.2em;
-    text-align: center;
-  }
-  .pudding__content-skill-subtitle {
-    font-size: 0.8em;
-    margin-left: 5px;
-  }
-  .pudding__skill-css-font{
-    margin-right: 105px;
-  }
-  .pudding__skill-js-font {
-    margin-right: 9px;
-  }
-  .pudding__gray-stamp {
-    width: 80px;
-    height: 80px;
-  }  
-  .skill-info-icon {
-    width: 25px;
-    margin-top: 3px;
-  }
-  .skills_detailed,
-  .accordion-icon {
-    font-size: 0.9em;
+
+  /* 푸딩비 스킬들 - 3페이지 */
+  .pudding__stamp-box-js {
+    margin-top: 15px;
+    /* background-color: orange; */
   }
 }
 
@@ -86,16 +166,14 @@
   /* 푸딩비 소개 */
   .pudding_me-img {
     width: 340px;
-    margin-left: 100px;
+
   }
-  .pudding__content-introduce-title-box {
-    /* justify-content: center;
-    align-items: center;
-    margin-top: 500px; */
+  .pudding__content-introduce-title {
+    margin-left: 15px;
   }
   .pudding__content-introduce-title {
     margin-top: 150px;
-    line-height: 45px;
+    line-height: 40px;
     /* font-size: 1.96em; */
     /* margin-bottom: 45px; */
   }
@@ -103,14 +181,16 @@
     position: absolute;
     top: 1340px;
     left: 10px;
-    padding: 30px 90px;
+    /* padding: 30px 110px 30px 90px; */
+    padding: 30px 110px;
     line-height: 23px;
   }
   .media_query-2 {
     position: absolute;
     top: 1390px;
     left: 10px;
-    padding: 30px 90px;
+    /* padding: 30px 110px 30px 90px; */
+    padding: 30px 110px;
     line-height: 23px;
   }
 
@@ -118,7 +198,8 @@
     position: absolute;
     top: 1460px;
     left: 10px;
-    padding: 30px 90px;
+    /* padding: 30px 110px 30px 90px; */
+    padding: 30px 110px;
     line-height: 23px;
   }
   .pudding__content-box-01 {
@@ -126,17 +207,28 @@
   }
   /* 푸딩비 스킬들! */
   .pudding__content-skill-box {
-    width: 55%;
-    height: 50%;
+    width: 67%;
+    height: 62%;
     background-color: rgb(255, 251, 246);
     position: absolute;
     top: 900px;
   }
   .pudding__content-skill-subtitle {
-    font-size: 65%;
+    /* font-size: 1.3em; */
   }
-  .pudding__gray-stamp {
-    width: 60px;
-    height: 60px;
+  .skill-info-icon {
+    /* margin-right: 33px; */
+  }
+  .pudding__skill-title-box {
+    margin-left: 25px;
+  }
+  .pudding__stamp-box {
+    margin-right: 20px;
+  }
+  .pudding__skill-title-box-css {
+    margin-bottom: 20px;
+  }
+  .pudding__content-skill-section-box {
+    width: 70%;
   }
 }

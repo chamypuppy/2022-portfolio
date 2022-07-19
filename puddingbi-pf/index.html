@@ -43,7 +43,7 @@
 
 
     </div>
-
+  </div>
 
     <!-- 푸딩비 타이틀+그림-->
     <div class="pudding__home-main-box">
@@ -97,19 +97,27 @@
 
           <!-- 푸딩비 두 번째 컨텐츠 (2페이지) - 푸딩비 스킬들 -->
           <div class="pudding__content-box-02">
-            <section class="pudding__content-skill-box">
-              <div class="pudding__content-skill-title">
-                푸딩비의 스킬들! <br />
-              </div>
+            <section class="pudding__content-skill-section-box">
 
-              <div class="pudding__content-skill-subtitle-box">
+
+              <div class="pudding__content-skill-flex-box">
+                <div class="pudding__skills-title-flex-box">
+              <div class="pudding__content-skill-title">
+                푸딩비의 스킬들! <br/></div>
+                <button id="show">
+                  <img class="pudding_stamp-btn"
+                  src="img/red-color_pudding-stamp-btn.png" /></button>
+                </div>
+
+              <!-- <div class="pudding__content-skill-subtitle-box"> -->
+
+                <!-- HTML SKILL -->
                 <div class="pudding__skill-html">
 
                   <div class="pudding__skill-title-box">
-                    <!-- <img class="skill_line-star" src="img/line_star.png" /> -->
                     <span class="pudding__content-skill-subtitle
                   pudding__skill-html-font">HTML</span>
-                  </div>
+
 
                   <div class="pudding__stamp-box">
                     <img class="pudding__gray-stamp" src="img/red-color_pudding-stamp.png" />
@@ -121,10 +129,13 @@
                     <img class="pudding__gray-stamp" src="img/gray_pudding-stamp.png" />
                   </div>
                 </div>
+                </div>
 
+                <!-- CSS SKILL -->
                 <div class="pudding__skill-css">
-                  <div class="pudding__skill-title-box">
+                  <div class="pudding__skill-title-box pudding__skill-title-box-css">
                     <!-- <img class="skill_line-star" src="img/line_star.png" /> -->
+                    <div class="pudding_content-skill-flex-box">
                     <span class="pudding__content-skill-subtitle
                   pudding__skill-css-font">CSS</span>
                   </div>
@@ -138,16 +149,19 @@
                     <img class="pudding__gray-stamp" src="img/gray_pudding-stamp.png" />
                   </div>
                 </div>
+                </div>
 
+                <!-- JS SKILL -->
                 <div class="pudding__skill-js">
-                  <div class="pudding__skill-title-box pudding__skill-js-title-box">
+                  <div class="pudding__skill-title-box">
                     <!-- <img class="skill_line-star" src="img/line_star.png" /> -->
+                    <div class="pudding__skill-js-title-box">
                     <span class="pudding__content-skill-subtitle
                   pudding__skill-js-font">Javascript</span>
-                    <img class="skill-info-icon" src="img/skill-info-icon.png" />
-                  </div>
+                </div>
+                <img class="skill-info-icon" src="img/skill-info-icon.png" />
 
-                  <div class="pudding__stamp-box">
+                  <div class="pudding__stamp-box pudding__stamp-box-js">
                     <img class="pudding__gray-stamp" src="img/red-color_pudding-stamp.png" />
                     <img class="pudding__gray-stamp" src="img/red-color_pudding-stamp.png" />
                     <img class="pudding__gray-stamp" src="img/red-color_pudding-stamp.png" />
@@ -158,39 +172,54 @@
                   </div>
 
                   <img class="js_certificate" src="img/js_challenge-certificate.JPG" />
-
+                </div>
                 </div>
 
-              </div>
+              <!-- </div> -->
+
+            </div>
 
 
               <!-- 스킬들 레이어 팝업 창 - 세부 스킬 사항 -->
-              <div class="pudding__content-skill-pop-up-box">
 
-                <button class="accordion">
-                  <h1>
-                    <i class="fas fa-moon accordion-icon"></i>
-                    <i class="fas fa-star accordion-icon"></i>
-                    <span class="skills_detailed">세부 스킬 사항</span>
-                  </h1>
 
-                </button>
 
-                <div class="accordion_click-pop-up">
-                  <h2>html</h2>
-                  <p>div와 span의 미세한 차이와 사용 용도에 대해 인지하고 있습니다. <br />
-                    charset="UTF-8"의 의미를 알고 있습니다. <br />
-                    시멘틱 태그의 의미와 사용 이유에 대해 알고 있습니다. <br />
-                    < head> 태그와 < body> 태그의 용도와 차이가 무엇인지 이해하고 있습니다.
-                  </p>
-                  <h2>css</h2>
-                  <p>HTML문서에서 link를 거는 위치를 알고 있고 여러 css 파일이 있는 경우 link 문장을 여럿 사용보다 (통상적인 이름의 파일)style.css과 같이 여러 css파일을
-                    연결 시켜주는 큰 범주의 css를 HTML과 연결 시킨 후, 나머지 css 파일들을 큰 css 파일에 @import시키는 방법을 알고 있습니다. <br />
-                    :root라는 개념을 통해 반복되는 값을 변수로 지정하는 방법의 코딩과 그에 대한 유지 보수의 간편성에 대해 인지하고 있습니다. <br /></p>
 
-                  <h2>javascript</h2>
-                  <p>HTML문서에서 link를 거는 위치를 알고 있고 여러 css 파일이 있는 경우 link 문장을 여럿 사용보다 (통상적인 이름의 파일)style.css과 같이 여러 css파일을
-                    연결 시켜주는 큰 범주의 css를 HTML과 연결 시킨 후, 나머지 css 파일들을 큰 css 파일에 @import시키는 방법을 알고 있습니다.</p>
+              <div class="background">
+                <div class="window">
+                  <div class="popup">
+              
+                    <div class="pudding__skill-pop-up-text">
+                    <h2>html</h2>
+
+                    <ul class="pudding__skill-ul">
+                      <li>div와 span의 미세한 차이와 사용 용도에 대해 인지하고 있습니다.</li>
+                      <li>charset="UTF-8"의 의미를 알고 있습니다.</li>
+                      <li>시멘틱 태그의 의미와 사용 이유에 대해 알고 있습니다.</li>
+                      <li>< head> 태그와 < body> 태그의 용도와 차이가 무엇인지 이해하고 있습니다.
+                    </li>
+                  </ul>
+
+                    <h2>css</h2>
+
+                    <ul class="pudding__skill-ul">
+                      <li>HTML문서에서 link를 거는 위치를 알고 있고 여러 css 파일이 있는 경우 link 문장을 여럿 사용보다 (통상적인 이름의 파일)style.css과 같이 여러 css파일을
+                      연결 시켜주는 큰 범주의 css를 HTML과 연결 시킨 후, 나머지 css 파일들을 큰 css 파일에 @import시키는 방법을 알고 있습니다.</li>
+                      <li>:root라는 개념을 통해 반복되는 값을 변수로 지정하는 방법의 코딩과 그에 대한 유지 보수의 간편성에 대해 인지하고 있습니다. </li>
+
+                    </ul>
+              
+                    <ul class="pudding__skill-ul">
+                    <h2>javascript</h2>
+                    <li>HHTML문서에서 link를 거는 위치를 알고 있고 여러 css 파일이 있는 경우 link 문장을 여럿 사용보다 (통상적인 이름의 파일)style.css과 같이 여러 css파일을
+                      연결 시켜주는 큰 범주의 css를 HTML과 연결 시킨 후, 나머지 css 파일들을 큰 css 파일에 @import시키는 방법을 알고 있습니다.</li>
+                    </ul>
+                  </div>
+                  
+                    <button id="close">
+                      <i class="fas fa-times fa-lg close-btn"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -211,19 +240,29 @@
                   <a href="https://github.com/chamypuppy/kokoa-clone/commit/c2d6ccf4a2d815a65687043abf8a1ae66e43d216"><i class="fab fa-github github-icon fa-2x"></i></a>
                   <div class="slide_project-title project_title-pudding-talk project_subtitle-pudding-talk">HTML과 CSS 그리고 약간의 Javascript 언어를 연습하기 위해 <br/> 카카오톡을 클론 코딩하였습니다.</div>
                   <li><img class="pudding_project-gif pudding_talk-gif" src="img/pudding_talk-gif.gif"></li>
-                  <li>
-                  <div class="slide_project-title project_subtitle-pudding-talk project_title-js-challenge">노마드코더 JS 챌린지</div>
-                  <a href="https://github.com/chamypuppy/kokoa-clone/commit/c2d6ccf4a2d815a65687043abf8a1ae66e43d216"><i class="fab fa-github github-icon fa-2x"></i></a>
-                  <div class="slide_project-title project_subtitle-pudding-talk project_title-js-challenge">노마드코더 JS 챌린지</div>
-                  <img class="pudding_project-gif js_challenge-gif" src="img/js_challenge-gif.gif"></li>
-                </ul>
+                  
 
+                    <div class="slide_project-title-flex-box">
+                  <div class="slide_project-title project_title-pudding-talk project_title-js-challenge slide_project-title-js">노마드코더 JS 챌린지</div>
+                  
+                  <a href="https://github.com/chamypuppy/kokoa-clone/commit/c2d6ccf4a2d815a65687043abf8a1ae66e43d216"><i class="fab fa-github github-icon fa-2x"></i></a>
+
+                  <div class="slide_project-title project_subtitle-pudding-talk project_title-js-challenge">아아아아아ㅏ</div>
+                  
+                      <div class="pudding_project-js-challenge-img-div">
+                        <li><img class="pudding_project-gif js_challenge-gif" src="img/js_challenge-gif.gif"></li>
+                </div>
+
+                </ul>
+              </section>
+              </div>
+              
                 <p class="controller">
                   <span class="prev">&lang;</span>  
                   <span class="next">&rang;</span>
                 </p>
-              </div>
-            </section>
+
+
           </div>
 
 
@@ -232,7 +271,7 @@
 
           <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
           <script src="script.js"></script>
-          <script src="skill-hover.js"></script>
+          <script src="skills.js"></script>
           <script src="project_slide.js"></script>
 </body>
 

@@ -20,12 +20,17 @@
 .js_challenge-gif {
   width: 700px;
   height: 400px;
-  margin-top: 110px;
-  margin-left: 197px;
+  /* margin-top: 110px; */
+  margin-left: -197px;
 }
 
 li{
   list-style: none;
+}
+
+.slide_project-title-flex-box {
+  display: flex;
+  flex-direction: column;
 }
 
 /* 보여줄 구간의 높이와 넓이 설정 */
@@ -67,6 +72,8 @@ li{
 .slide_project-title  {
   margin-left: 18%;
 }
+
+
 
 .project_subtitle-pudding-talk {
   margin-left: 7%;
@@ -115,7 +122,8 @@ li{
   text-align: center;
   border-radius: 50%;
   padding: 10px 20px;
-  top: 50%;
+  top: 3400px;
+  margin: 0 250px;
   font-size: 1.3em;
   cursor: pointer;
 }

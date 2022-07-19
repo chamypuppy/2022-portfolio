@@ -6,41 +6,69 @@
 }
 
 .pudding__content-box-02 {
-  padding: 330px 0;
+  padding: 330px 0 10px 0;
   background-color: rgb(255, 224, 224);
+  /* background-color: rgb(255, 255, 255); */
   width: 100%;
   height: 600px;
 }
 
-.pudding__content-skill-box {
+.pudding__content-skill-section-box {
   /* width: 1200px;
   height: 600px; */
-  width: 55%;
-  height: 50%;
+  /* width: 800px;
+  height: 500px; */
+  width: 60%;
+  height: 85%;
   background-color: rgb(255, 251, 246);
-  position: absolute;
-  top: 80%;
-  left: 50%; 
+  position: relative;
+  top: -1500px;
+  left: 50%;
   transform: translate(-48%, 270%);
   box-shadow: 3px 3px 10px 5px rgba(128, 128, 128, 0.362);
   font-family: 'IM_Hyemin-Bold';
+  border-radius: 2px;
 }
 
-.pudding__content-skill-title {
-  font-size: 40px;
-  padding-top: 45px;
-  text-align: center;
-}
-
-.pudding__content-skill-subtitle {
-  font-size: 25px;
-}
-
-.pudding__content-skill-subtitle-box {
-  font-size: 30px;
+.pudding__content-skill-flex-box {
   display: flex;
   flex-direction: column;
 }
+
+.pudding__skills-title-flex-box {
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+
+.pudding__content-skill-title {
+  font-size: 40px;
+  padding-top: 40px;
+  text-align: center;
+  /* position: absolute; */
+}
+
+.pudding_title-flex-box {
+  display: flex;
+  justify-content: center;
+}
+
+.pudding_content-skill-flex-box {
+  display: flex;
+  justify-content: center;
+}
+
+.pudding__content-skill-subtitle {
+  font-size: 1.3em;
+  font-size: 150.0%;
+}
+
+/* .pudding__content-skill-subtitle-box {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+} */
 
 .pudding__content-skill-subtitle {
   margin: 40px 60px;
@@ -49,6 +77,17 @@
 }
 
 /* 푸딩 도장 */
+.pudding_stamp-btn {
+  width: 90px;
+  height: 90px;
+  transform: rotate(-20deg);
+  margin-top: 20px;
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 25px;
+  right: 215px; */
+}
+
 .pudding__skill-html {
   display: flex;
   /* margin-top: 50px; */
@@ -58,10 +97,11 @@
 .pudding__skill-css,
 .pudding__skill-js {
   display: flex;
+  align-items: center;
 }
 
 .pudding__skill-html-font {
-  margin-right: 90px;
+  margin-right: 95px;
 }
 
 .pudding__skill-css-font{
@@ -69,16 +109,16 @@
 }
 
 .pudding__skill-js-font {
-  margin-right: 20px;
-  margin-right: 5px;
-  font-size: 27px;
+  /* margin-right: 20px; */
+  margin-right: 3px;
+  /* font-size: 27px; */
 }
 
 .pudding__skill-title-box {
   display: flex;
   align-items: center;
   margin-left: 32px; /* skill_line-star시 */
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 
@@ -89,8 +129,17 @@
 }
 
 .pudding__gray-stamp {
-  width: 100px;
-  height: 100px;
+  /* width: 90px;
+  height: 90px; */
+  width: 13%;
+  /* height: 84%; */
+  /* margin-right: 3px; */
+}
+
+.pudding__stamp-box-js {
+  width: 90%;
+  height: 30%;
+  margin-left: 5px;
 }
 
 
@@ -100,7 +149,8 @@
   height: 500px;
   display: none;
   position: absolute;
-  transform: translate(40%, 10%);
+  transform: translate(26%, 10%);
+  z-index: 1;
   /* transition효과 추가하기 */
 }
 
@@ -112,38 +162,94 @@
 
 
 
-/* 스킬들 아코디언 팝업창 */
-.accordion {
-  font-family: 'IM_Hyemin-Bold';
-  position: absolute;
-  bottom: -100px;
-  background-color:rgba(255, 255, 255, 0);
-  cursor: pointer;
+/* 스킬 세부사항 팝업창 */
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  border: none;
-  font-size: 16px;
-  transition: 0.5s;
-  text-align: left;
-  padding:10px;
-  font-size: 20px;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* background-color: rgba(0, 0, 0, 0.152); */
+  z-index: 1000;
+  
+  /* 숨기기 */
+  z-index: -1;
+  opacity: 0;
 }
 
-.accordion-icon {
-  font-size: 25px;
+.show {
+  opacity: 1;
+  z-index: 1000;
+  transition: all .5s;
 }
 
-.accordion_click-pop-up {
+.window {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
   position: absolute;
-  top: 560px;
-  padding: 0 18px;
-  /* background-color: #f7f7f7; */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  /* border-top:1px solid #F0F0F0; */
-  /* color:#666666; */
-  background-color: rgba(255, 251, 246, 0.477);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  background-color: rgb(255, 251, 246);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
+  padding: 30px;
+  
+  /* 임시 지정 */
+  width: 900px;
+  height: 500px;
+  
+  /* 초기에 약간 아래에 배치 */
+  transform: translate(-50%, -40%);
 }
 
-/* 달별 클릭 시 색 유지되게 하기*/
+.popup h2 {
+  text-align: center;
+}
+
+.show .popup {
+  transform: translate(-50%, -50%);
+  transition: all .5s;
+}
+
+#show,
+#close {
+  border-style: none;
+  background-color:transparent;
+}
+
+#close {
+  position: absolute;
+  top: 40px;
+}
+
+#close:hover {
+  transform: rotate( 720deg );
+}
+
+/* #close {animation: rotate_close-btn 6s linear infinite;transform-origin: 50% 50%;} */
+
+/* @keyframes rotate_close-btn{
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+.pudding__skill-ul li {
+  /* list-style: square; */
+  list-style: disc;
+}
+
+/* #show {
+  position: absolute;
+  bottom: 75px;
+  left: 40px;
+  color: rgb(46, 40, 40);
+} */
