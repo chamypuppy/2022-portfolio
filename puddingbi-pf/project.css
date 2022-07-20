@@ -21,7 +21,7 @@
   width: 700px;
   height: 400px;
   /* margin-top: 110px; */
-  margin-left: -197px;
+  margin-left: -300px;
 }
 
 li{
@@ -32,6 +32,14 @@ li{
   display: flex;
   flex-direction: column;
 }
+
+.slide_project-title-js {
+  position: absolute;
+  top: -5px;
+  left: 740px;
+}
+
+
 
 /* 보여줄 구간의 높이와 넓이 설정 */
 #slideShow{
@@ -82,13 +90,47 @@ li{
 }
 
 .github-icon {
-  margin-left: 21%;
+  margin-left: 20%;
+  margin-left: 19.7%;
   margin-bottom: 30px;
+  color: black;
+}
+
+.dlatl-icon {
+  /* width: 4%; */
+  width: 75px;
+  position: absolute;
+  top: 45px;
+  margin-left: 8px;
+}
+
+.dlatl-icon2 {
+  left: 1340px;
+}
+
+.github-icon2 {
+  position: absolute;
+  top: 55px;
+  left: 928px;
+}
+
+
+.pudding__home-img-box-wave:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  filter: brightness(150%);
+  filter: contrast(120%);
 }
 
 .project_title-js-challenge {
   text-align: center;
   width: 30%;
+}
+
+.slide-project-title02 {
+  position: absolute;
+  top: 140px;
+  left: 950px;
 }
 
 
@@ -134,7 +176,7 @@ li{
 }
 
 .prev{
-  left: 10px;
+  left: 30px;
 }
 
 /* 이전 화살표에 마우스 커서가 올라가 있을때 

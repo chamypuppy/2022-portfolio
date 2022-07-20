@@ -9,8 +9,10 @@ function deleteImg(){
   jsImg.style.display = "none";
 }
 
-function infoIconHover(){
+function infoIconHover(event){
   jsImg.style.display = "block";
+  // jsImg.style.opacity = '0.5'
+  // jsImg.target.style.transition = "all 0.5s";
 
   infoIcon.addEventListener("mouseout", deleteImg);
 }
