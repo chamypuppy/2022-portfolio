@@ -1,6 +1,10 @@
 /* 폰트들 */
 @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic:wght@400;800&family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR:wght@500&display=swap');
 
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
 /* 상단 네비 */
 @import "nav.css";
 
@@ -11,6 +15,7 @@
 @import "introduce_me.css";
 @import "my-skill.css";
 @import "project.css";
+@import "future_puddingb.css";
 /* @import "media_query.css"; */
 
 
