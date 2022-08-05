@@ -7,10 +7,16 @@
 
 .pudding__content-box-04 {
   background-color: rgb(183, 219, 180);
-  height: 1100px;
+  height: 1200px;
   margin-top: 0;
 
   /* margin-top: 100px; */
+}
+
+.pudding__future-img-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
 }
 
 .pudding__content-future-me-title {
@@ -23,15 +29,19 @@
 .pudding__future-me-and-goal-text {
   text-align: center;
   font-family: 'NanumSquare';
-  margin-top: 150px;
+  margin-top: 70px;
   line-height: 25px;
 }
 
 .future__me-goal-text-bold {
   font-size: 1.3em;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .future__me-goal-text {
   margin-top: 25px;
+}
+
+.future__subtitle {
+  margin-top: 20px;
 }

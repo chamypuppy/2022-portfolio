@@ -31,3 +31,11 @@ a {
   text-decoration: none;
 
 }
+
+.pudding__home-img-wave,
+.pudding__home-img-boat,
+.pudding__future-img-dust,
+.pudding_me-img
+ {
+  pointer-events : none;
+}

@@ -105,7 +105,7 @@
 
 @media screen and (min-width:1121px) and (max-width: 1500px) {
   body {
-    /* background-color: #000; */
+    background-color: #000;
   }
   /* 푸딩비 홈 (메인 화면) */
   .pudding__home-title-text {
@@ -120,19 +120,25 @@
   .pudding__home-main-box {
     height: 750px;
   }
+  .pudding__home-img {
+    margin-top: 30px;
+  }
   /* 푸딩비 소개 (나의 푸딩비 - 1페이지) */
   .pudding__content-introdution {
     padding: 130px 150px 130px 150px;
     padding: 130px 110px 130px 110px;
   }
   .pudding__content-introduce-title {
-    margin-top: 90px;
+    margin-top: 0px;
     font-size: 1.96em;
+    font-size: 2.2em;
+    /* font-size: 1.76em; */
     margin-bottom: 45px;
   }
   .pudding__content-introduce-subtitle {
     font-size: 1.05em;
     line-height: 1.25em;
+    line-height: 24px;
   }
 
   /* 푸딩비 스킬들 - 3페이지 */

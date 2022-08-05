@@ -7,6 +7,39 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-ExtraLight';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Thin';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoPubWorldDotum';
+  font-weight: 300;
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.eot?#iefix') format('embedded-opentype'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.ttf') format("truetype");
+  font-display: swap;
+}
 
 /* @font-face {
   font-family: 'KoPubDotumMedium';
@@ -34,17 +67,42 @@
 
 /* 내 소개 문구 */
 .pudding__content-introduce-title {
-  font-family: 'LeeSeoyun';
+  font-family: 'Pretendard-Thin';
+  font-weight: bold;
   /* font-size: 30px; */
-  margin-top: 80px;
-  font-size: 35px;
-  font-style: italic;
+  margin-top: 0px;
+  font-size: 25px;
+  /* font-style: italic; */
+}
+
+.pudding__content-introduce-title2 {
+  font-family: 'Pretendard-Bold';
+  /* font-size: 0.6em; */
+  font-size: 1.47em;
+  margin-top: 5px;
+  /* font-size: 0.67em; */
 }
 
 .pudding__content-introduce-subtitle {
-  /* font-family: 'KoPubDotumMedium'; */
   font-family: 'NanumSquare';
+  font-weight: 400;
   font-size: 20px;
+  line-height: 30px;
+  color: rgb(45, 43, 43);
+}
+
+.introduce-subtitle1 {
+  margin-top: 50px;
+}
+
+.font-thin {
+  font-family: 'Pretendard-Thin';
+  font-size: 23px;
+}
+
+.font-bold {
+  font-weight: 800;
+  font-size: 22px;
 }
 
 
