@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #000; */
+  align-items: center;
+  min-width: 700px;
+}
+
+.nav__menu{
+  background-color: transparent;
+  border: none;
+  margin: 20px 0 0 0;
+  font-size: 1.1rem;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+}
+
+.nav__menu:hover {
+  color: rgb(255, 209, 72);
+}
+
+
+.side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* z-index: 15; */
+}
+
+.side__wrapper {
+  background-color: rgba(5, 1, 1, 0.388);
+  background-color: rgba(5, 1, 1, 0.644);
+  min-width: 200px;
+  height: 100vh;
+  /* padding-left: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0 0 0;
+}
+
+.active {
+  display: none;
+}
+
+
+.side__wrapper li {
+  padding: 0 0 20px 10px;
+}
+
+.side__menu{
+  background-color: transparent;
+  border: none;
+  margin: 20px 0 0 0;
+  font-size: 1.1rem;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+}
+
+.side__menu:hover {
+  color: rgb(255, 209, 72);
+}
+
+.side__wrapper,
+.side__menu {
+  transition: all 0.2s ease-in-out; /* 현재 트렌지션 실행이 안됨 ㅠㅠ -10.07- */
+}
+
+.nav__hamburger,
+.nav__hamburger span {
+  transition: all 0.4s;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.hamburger__wrapper {
+  position: relative;
+  top: 25px;
+  right: 20px;
+  width: 50px;
+  height: 45px;
+}
+
+.nav__hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 20;
+}
+
+.nav__hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+
+.nav__hamburger span:first-child{
+  top: 0;
+}
+
+.nav__hamburger span:nth-child(2){
+  top: 17px;
+}
+
+.nav__hamburger span:last-child{
+  top: 35px;
+}
+
+.nav__hamburger.active__hamburger span:first-child {
+  transform: translateY(15px) rotate(-45deg);
+}
+
+.nav__hamburger.active__hamburger span:nth-child(2){
+  opacity: 0;
+}
+
+.nav__hamburger.active__hamburger span:last-child{
+  transform: translateY(-20px) rotate(45deg);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .nav__wrapper {
+    justify-content: space-evenly;
+    min-width: 500px;
+  }
+  .nav__menu{
+    font-size: 1.0rem;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .nav__menu{
+    display: none;
+  }
+  .nav__wrapper {
+    min-width: 60px;
+  }
+  .nav__hamburger {
+    display: block;
+    /* font-size: 1.5rem; */
+  }
+}
