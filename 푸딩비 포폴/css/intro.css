@@ -1,0 +1,550 @@
+.intro__wrapper {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* flex-direction: column; */
+  /* align-items:flex-start; */
+  font-family: 'NanumSquare';
+  /* font-family: 'NanumSquareLight'; */
+  color: white;
+  margin-top: 40px;
+  margin: 100px 0 0 25px;
+}
+
+.intro__text--title {
+  font-family: 'NanumSquareExtraBold';
+  font-size: 2.1rem;
+  z-index: -1;
+  /* 즐거움!글씨가 사이드 메뉴보다 아래로 오게 */
+  position: relative;
+  /* 평행사변형 도형들을 위해 사용 */
+}
+
+.intro__text--subtitle2--special--wrapper {
+  z-index: -1;
+  /* 사이드 메뉴 뒤로 글씨 보이게 하기 위해 */
+}
+
+.intro__text--subtitle1,
+.intro__text--subtitle2,
+.intro__text--subtitle3 {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.intro__subtitle--bold {
+  font-family: 'NanumSquareExtraBold';
+  font-size: 1.7rem;
+}
+
+.parallelogram {
+  width: 100px;
+  height: 50px;
+  border-top: 7px solid transparent;
+  border-bottom: 45px solid rgb(62, 122, 213);
+  border-left: -5px solid transparent;
+  border-right: 210px solid rgb(62, 122, 213);
+  transform: rotate(1deg);
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: -1;
+  top: -13px;
+  left: -5px;
+}
+
+
+.parallelogram2 {
+  width: 124px;
+  height: 50px;
+  position: absolute;
+  z-index: -1;
+  top: -13px;
+  left: 217px;
+  border-top: 5px solid transparent;
+  border-left: 16px solid transparent;
+  border-bottom: 50px solid rgb(156, 130, 227);
+  border-right: 110px solid rgb(156, 130, 227);
+  transform: rotate(-1deg);
+}
+
+
+.parallelogram3 {
+  width: 129px;
+  height: 50px;
+  transform: scaleY(-1);
+  position: absolute;
+  z-index: -1;
+  top: -17px;
+  right: 92px;
+  border-top: 7px solid transparent;
+  border-bottom: 47px solid rgb(171, 216, 117);
+  border-left: -5px solid transparent;
+  border-right: 110px solid rgb(171, 216, 117);
+  transform: rotate(1deg);
+}
+
+.intro__text--subtitle2--special--wrapper {
+  position: relative;
+}
+
+.parallelogram4 {
+  position: absolute;
+  /* width: 150px; */
+  /* height: 50px; */
+  border-top: 7px solid transparent;
+  border-bottom: 45px solid rgb(241, 232, 135);
+  border-left: -5px solid transparent;
+  border-right: 342px solid rgb(238, 230, 143);
+  transform: rotate(1deg);
+  /* transform: scaleX(-1); */
+  z-index: -1;
+  top: -5px;
+  right: 38px;
+}
+
+.parallelogram5 {
+  width: 129px;
+  height: 50px;
+  transform: scaleY(-1);
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 40px solid rgb(102, 71, 27);
+  /* border-left: -5px solid transparent; */
+  border-right: 198px solid rgb(102, 71, 27);
+  transform: scaleX(-1);
+}
+
+.intro__img--wrapper {
+  position: relative;
+  z-index: -1;
+  /* 푸딩비 배+파도 그림이 사이드 메뉴보다 아래로 오게 */
+}
+
+.intro__img--title--boat {
+  animation: boat 0.8s infinite ease-in-out alternate;
+}
+
+.intro__img--title--wave {
+  /*   display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: wave 0.9s infinite ease-in-out alternate;
+}
+
+@keyframes boat {
+  from {
+    left: 10%;
+    transform: translatey(0px);
+    -webkit-transform: rotate(5deg);
+  }
+
+  to {
+    left: 15%;
+    transform: translatey(-20px);
+  }
+}
+
+
+@keyframes wave {
+  from {
+    top: 10px;
+    transform: translatex(0px);
+    -webkit-transform: rotate(5deg);
+  }
+
+  to {
+    top: 20px;
+    transform: translatex(0px);
+  }
+}
+
+/* 웨이브는 위 아래로 로테 가능하게 해보기ㅠㅠ*/
+
+@media screen and (max-width: 1290px) {}
+
+
+@media screen and (max-width: 1260px) {
+  .intro__wrapper {
+    /* background-color: rgba(0, 0, 0, 0.343); */
+    flex-direction: column;
+    margin: 200px 0;
+  }
+}
+
+
+@media screen and (max-width: 645px) {
+  .intro__wrapper {
+    /* background-color: rgba(18, 58, 123, 0.364); */
+    margin: 150px 0 10px;
+    padding: 10px;
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 610px;
+    /* margin: 10px; */
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+  .intro__wrapper {
+    /* background-color: rgba(18, 123, 32, 0.364); */
+    /* padding: 30px; */
+  }
+
+  .intro__text--title {
+    /* font-size: 2.1rem; */
+    font-size: 1.7rem;
+  }
+
+  .intro__text--subtitle1,
+  .intro__text--subtitle2,
+  .intro__text--subtitle3 {
+    /* font-size: 1.5rem;
+  line-height: 2.8rem; */
+
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+  }
+
+  .intro__subtitle--bold {
+    font-size: 1.4rem;
+  }
+
+
+  .parallelogram {
+    width: 100px;
+    height: 35px;
+    border-top: 7px solid transparent;
+    border-bottom: 40px solid rgb(62, 122, 213);
+    border-left: -5px solid transparent;
+    border-right: 175px solid rgb(62, 122, 213);
+    transform: rotate(1deg);
+    transform: scaleX(-1);
+    position: absolute;
+    z-index: -1;
+    top: -13px;
+    left: -5px;
+  }
+
+  .parallelogram2 {
+    width: 100px;
+    top: -15px;
+    left: 175px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid rgb(156, 130, 227);
+    border-right: 80px solid rgb(156, 130, 227);
+  }
+
+
+  .parallelogram3 {
+    width: 100px;
+    height: 45px;
+    top: -15px;
+    right: 88px;
+    border-bottom: 40px solid rgb(171, 216, 117);
+    border-right: 90px solid rgb(171, 216, 117);
+  }
+
+  .intro__text--subtitle2--special--wrapper {
+    position: relative;
+  }
+
+  .parallelogram4 {
+    border-right: 282px solid rgb(238, 230, 143);
+    border-bottom: 40px solid rgb(241, 232, 135);
+    top: -4px;
+    right: 36px;
+  }
+
+  .parallelogram5 {
+    width: 110px;
+    height: 50px;
+    transform: scaleY(-1);
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 40px solid rgb(102, 71, 27);
+    /* border-left: -5px solid transparent; */
+    border-right: 160px solid rgb(102, 71, 27);
+    transform: scaleX(-1);
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 500px;
+    /* margin: 10px; */
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+
+  /* .intro__text--title {
+    font-size: 1.7rem;
+  } */
+  .intro__text--subtitle1,
+  .intro__text--subtitle2,
+  .intro__text--subtitle3 {
+    font-size: 1.15rem;
+  }
+
+  .intro__subtitle--bold {
+    font-size: 1.25rem;
+  }
+
+
+
+  .parallelogram3 {
+    right: 35px;
+  }
+
+  .parallelogram4 {
+    border-right: 255px solid rgb(238, 230, 143);
+    right: 20px;
+  }
+
+  .parallelogram5 {
+    border-right: 145px solid rgb(102, 71, 27);
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 480px;
+  }
+}
+
+
+@media screen and (max-width: 465px) {
+  .intro__text--title {
+    font-size: 1.6rem;
+  }
+
+  .intro__text--subtitle1,
+  .intro__text--subtitle2,
+  .intro__text--subtitle3 {
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+  }
+
+  .intro__subtitle--bold {
+    font-size: 1.2rem;
+  }
+
+
+  .parallelogram {
+    border-right: 162px solid rgb(62, 122, 213);
+  }
+
+  .parallelogram2 {
+    width: 100px;
+    top: -15px;
+    left: 165px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid rgb(156, 130, 227);
+    border-right: 80px solid rgb(156, 130, 227);
+  }
+
+
+  .parallelogram3 {
+    width: 92px;
+    right: 45px;
+    border-right: 87px solid rgb(171, 216, 117);
+  }
+
+  .parallelogram4 {
+    border-right: 245px solid rgb(238, 230, 143);
+    border-bottom: 35px solid rgb(241, 232, 135);
+    right: 20px;
+  }
+
+  .parallelogram5 {
+    height: 40px;
+    border-right: 140px solid rgb(102, 71, 27);
+    border-bottom: 35px solid rgb(102, 71, 27);
+    top: 35px;
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 450px;
+    /* margin: 10px; */
+    margin-left: 20px;
+  }
+}
+
+
+@media screen and (max-width: 445px) {
+  .intro__text--title {
+    font-size: 1.5rem;
+  }
+
+  .intro__text--subtitle1,
+  .intro__text--subtitle2,
+  .intro__text--subtitle3 {
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+  }
+
+  .intro__subtitle--bold {
+    font-size: 1.1rem;
+  }
+
+
+  .parallelogram {
+    border-right: 152px solid rgb(62, 122, 213);
+  }
+
+  .parallelogram2 {
+    width: 95px;
+    left: 150px;
+    border-right: 75px solid rgb(156, 130, 227);
+  }
+
+
+  .parallelogram3 {
+    width: 87px;
+    right: 33px;
+    border-right: 82px solid rgb(171, 216, 117);
+  }
+
+  .parallelogram4 {
+    border-right: 222px solid rgb(238, 230, 143);
+    right: 7px;
+  }
+
+  .parallelogram5 {
+    border-right: 128px solid rgb(102, 71, 27);
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    /* max-width: 400px; */
+    max-width: 350px;
+  }
+}
+
+
+@media screen and (max-width: 412px) {
+  .intro__subtitle--wrapper {
+    margin: 0 10px;
+  }
+
+  .intro__text--title {
+    font-size: 1.4rem;
+  }
+
+  .intro__text--subtitle1,
+  .intro__text--subtitle2,
+  .intro__text--subtitle3 {
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+  }
+
+  .intro__subtitle--bold {
+    font-size: 1.2rem;
+  }
+
+
+  .parallelogram {
+    /* border-right: 144px solid rgb(62, 122, 213); */
+    /* border-bottom: 35px solid rgb(62, 122, 213); */
+    display: none;
+  }
+
+  .parallelogram2 {
+    /* width: 90px; */
+    /* height: 45px; */
+    /* left: 140px; */
+    /* border-right: 70px solid rgb(156, 130, 227); */
+    /* border-bottom: 35px solid rgb(156, 130, 227); */
+    display: none;
+  }
+
+
+  .parallelogram3 {
+    /* width: 82px;
+  right: 27px;
+  height: 40px;
+  border-right: 77px solid rgb(171, 216, 117);
+  border-bottom: 35px solid rgb(171, 216, 117); */
+    display: none;
+  }
+
+  .parallelogram4 {
+    /* border-right: 222px solid rgb(238, 230, 143);
+  right: 7px; */
+    display: none;
+  }
+
+  .parallelogram5 {
+    /* border-right: 128px solid rgb(102, 71, 27); */
+    display: none;
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 340px;
+  }
+}
+
+
+@media screen and (max-width: 370px) {
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 314px;
+  }
+}
+
+@media screen and (max-width: 362px){
+  .intro__text--title {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  /* .intro__text--title {
+    font-size: 1.3rem;
+    line-height: 30px;
+  } */
+
+  .intro__text--subtitle1,
+  .intro__text--subtitle2,
+  .intro__text--subtitle3 {
+    font-size: 1rem;
+    line-height: 2.2rem;
+  }
+
+  .intro__subtitle--bold {
+    font-size: 1.1rem;
+  }
+
+  .intro__img--title--boat,
+  .intro__img--title--wave {
+    max-width: 240px;
+    margin-right: 10px;
+  }
+}
