@@ -1,0 +1,117 @@
+.project1__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+  font-family: 'NanumSquare';
+  margin: 250px 0;
+  color: #fff;
+  position: relative;
+}
+
+.project1__title--wrapper {
+  margin-bottom: 80px;
+  line-height: 45px;
+}
+
+.project1__text--subtitle {
+  position: absolute; /* 미디어 뷰포트에 반응하기 위해 */
+  /* left: 0; */
+  font-family: 'NanumMongDor';
+  font-size: 2rem;
+}
+
+.project1__text--title {
+  position: absolute; /* 미디어 뷰포트에 반응하기 위해 */
+  top: 50px;
+  /* font-family: 'NanumSquareBold'; */
+  font-family: 'NanumSquareExtraBold';
+  font-size: 2.5rem;
+}
+
+.project1__category--wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: 'NanumSquareExtraBold';
+  font-size: 1.2rem;
+  padding-top: 89px;
+}
+
+.project1__sentence--wrapper { /* 컨텐츠 설명(카테고리와 90px 차이남!!) */
+  margin-top: 170px;
+  font-size: 1.2rem;
+}
+
+.project__sentence-bold {
+  font-family: 'NanumSquareExtraBold';
+}
+
+.project1__category1,
+.project1__category1--sentence {
+  margin-bottom: 40px;
+}
+
+
+.project1__category2 {
+  margin-bottom: 150px;
+  padding-top: 5px;
+}
+
+.project1__category2--sentence {
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.project1__category3 {
+  padding-top: 50px;
+  margin-bottom: 230px;
+}
+
+.project1__category3--sentence {
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.project1__category4 {
+  margin-bottom: 50px;
+}
+
+.project1__category4--sentence {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+
+.project__contents-img--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project1__category4--sentence,
+.project1__category5--sentence {
+  width: 50px;
+  height: 50px;
+}
+
+.project1__gif {
+  width: 400px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .project1__wrapper {
+    background-color: rgba(0, 0, 0, 0.163);
+    margin: 250px 30px;
+  }
+  .project1__gif {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .project1__sentence--wrapper {
+    margin-left: 10px;
+  }
+}
