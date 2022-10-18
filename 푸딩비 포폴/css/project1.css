@@ -100,9 +100,13 @@
   margin-top: 20px;
 }
 
+.project1__sentence--wrapper a { /* a는 가로 길이 값은 가질 수 있으니까! */
+  width: 50px;
+}
+
 @media screen and (max-width: 1400px) {
   .project1__wrapper {
-    background-color: rgba(0, 0, 0, 0.163);
+    /* background-color: rgba(0, 0, 0, 0.163); */
     margin: 250px 30px;
   }
   .project1__gif {
@@ -114,4 +118,128 @@
   .project1__sentence--wrapper {
     margin-left: 10px;
   }
+}
+
+@media screen and (max-width: 1260px) {
+    .project1__sentence--wrapper {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  /* .project1__sentence--wrapper {
+    margin-left: 20px;
+  } */
+
+  .project1__gif {
+    max-width: 370px;
+  }
+  
+}
+
+@media screen and (max-width: 1215px) {
+  .project1__category--wrapper {
+    font-size: 1.1rem;
+    padding-top: 90px;
+  }
+
+  .project1__category3 {
+    padding-top: 52px;
+    margin-bottom: 230px;
+  }
+
+  .project1__sentence--wrapper { /* 컨텐츠 설명(카테고리와 90px 차이남!!) */
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .project1__gif {
+    max-width: 340px;
+    height: 750px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  .project1__gif {
+    max-width: 320px;
+    height: 710px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .project1__text--title {
+    top: 45px;
+    font-size: 2.4rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.9rem;
+  }
+
+  .project1__category--wrapper {
+    font-size: 1.05rem;
+    padding-top: 89px;
+  }
+
+  .project1__category2 {
+    padding-top: 7px;
+  }
+
+  .project1__category3 {
+    padding-top: 53px;
+    margin-bottom: 230px;
+  }
+
+  .project1__sentence--wrapper {
+    font-size: 1.05rem;
+  }
+
+  .project1__gif {
+    margin-top: 70px;
+  }
+
+}
+
+@media screen and (max-width: 1074px) { /* 여기서부터는 태블릿이라 생각하고 미디어쿼리! */
+  .project1__wrapper {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-evenly;
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    font-family: 'NanumSquare';
+    margin: 250px 0;
+    color: #fff;
+    position: relative;
+  }
+
+  .project1__text--subtitle {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem; /* 다시 처음처럼! */
+  }
+  
+  .project1__text--title {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem; /* 다시 처음처럼! */
+    margin-top: 10px;
+  }
+
+  .project1__gif {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 530px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+  .project1__category--wrapper {
+    margin-left: 100px;
+  }
+  .project1__sentence--wrapper {}
 }
