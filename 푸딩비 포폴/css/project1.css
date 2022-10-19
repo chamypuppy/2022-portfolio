@@ -7,6 +7,7 @@
   margin: 250px 0;
   color: #fff;
   position: relative;
+  z-index: -1;
 }
 
 .project1__title--wrapper {
@@ -203,16 +204,12 @@
 
 }
 
+
 @media screen and (max-width: 1074px) { /* 여기서부터는 태블릿이라 생각하고 미디어쿼리! */
   .project1__wrapper {
     display: flex;
-    flex-direction:column-reverse;
     justify-content: space-evenly;
-    /* justify-content: space-around; */
-    /* flex-direction: column; */
-    font-family: 'NanumSquare';
-    margin: 250px 0;
-    color: #fff;
+    margin: 300px 0;
     position: relative;
   }
 
@@ -230,16 +227,337 @@
     margin-top: 10px;
   }
 
+  .project1__category--wrapper,
+  .project1__sentence--wrapper {
+    margin-top: 1000px;
+  }
+  
+  .project1__category--wrapper {
+    margin-top: 910px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 1000px;
+  }
+
   .project1__gif {
     position: absolute;
+    /* top: 62%; */
+    /* top: 30%; */
+    top: 520px;
     left: 50%;
-    top: 30%;
-    top: 530px;
-    margin: 0;
     transform: translate(-50%, -50%);
+    margin: 0;
+    max-width: 340px;
+    height: 750px;
   }
-  .project1__category--wrapper {
-    margin-left: 100px;
-  }
-  .project1__sentence--wrapper {}
+  
 }
+
+@media screen and (max-width: 730px) {
+  .project1__wrapper {
+    margin: 300px 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 702px) {
+  .project1__category--wrapper {
+    word-break: keep-all; /* 우와!! 공간에 따라 글자 띄어쓰기가 알아서 되네! */
+    line-height: 20px;
+    margin-top: 907px;
+  }
+
+  .project1__category1 {
+    margin-bottom: 30px;
+  }
+
+  .project1__category1--sentence {
+    margin-bottom: 45px;
+  }
+
+  .project1__category2 {
+    padding-top: 0;
+    margin-bottom: 161px;
+  }
+
+  .project1__category2--sentence {
+    margin-bottom: 45px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 195px;
+  }
+
+  .project1__category4 {
+    margin-bottom: 40px;
+  }
+
+  .project1__category4--sentence {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .project1__category3 {
+    margin-bottom: 225px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .project1__category--wrapper {
+    margin-top: 898px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 990px;
+  }
+
+
+  .project1__category2 {
+    margin-bottom: 190px;
+  }
+
+  .project1__gif {
+    top: 500px;
+    max-width: 320px;
+    height: 710px;
+  }
+}
+
+
+@media screen and (max-width: 486px) { /* 모바일 뷰포트 */
+  .project1__category--wrapper {
+    margin-top: 870px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 962px;
+  }
+
+
+  .project1__category2 {
+    margin-bottom: 221px;
+  }
+
+  .project1__gif {
+    top: 490px;
+    max-width: 300px;
+    height: 680px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .project1__category3 {
+    margin-bottom: 254px;
+  }
+}
+
+
+@media screen and (max-width: 436px) {
+  .project1__text--subtitle {
+    font-size: 1.9rem;
+  }
+  
+  .project1__text--title {
+    top: 40px;
+    font-size: 2.4rem;
+  }
+
+  .project1__category2 {
+    margin-bottom: 249px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .project1__wrapper {
+    margin: 300px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 860px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 952px;
+  }
+
+  .project1__text--title {
+    top: 40px;
+    font-size: 2.3rem;
+  }
+
+  .project1__category3 {
+    margin-bottom: 285px;
+  }
+
+}
+
+@media screen and (max-width: 410px) {
+  .project1__wrapper {
+    margin: 260px 20px;
+  }
+
+  .project1__text--title {
+    /* top: 40px; */
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project1__category2 {
+    margin-bottom: 281px;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .project1__text--title {
+    top: 35px;
+    font-size: 2rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 850px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 942px;
+  }
+
+  .project1__gif {
+    top: 470px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .project1__category--wrapper {
+    font-size: 1rem;
+  }
+  
+  .project1__sentence--wrapper {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .project1__text--title {
+    top: 35px;
+    font-size: 1.9rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 830px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 922px;
+  }
+
+  .project1__gif {
+    top: 450px;
+    max-width: 290px;
+    height: 655px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .project1__category1 {
+    margin-bottom: 29px;
+  }
+  .project1__category2 {
+    margin-bottom: 310px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .project1__wrapper {
+    margin: 260px 20px;
+  }
+
+  .project1__text--title {
+    /* top: 40px; */
+    font-size: 1.8rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.7rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 730px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 822px;
+  }
+
+  .project1__gif {
+    top: 400px;
+    max-width: 270px;
+    height: 570px;
+  }
+}
+
+@media screen and (max-width: 333px) {
+  .project1__wrapper {
+    margin-top: 230px;
+  }
+
+  .project1__text--title {
+    top: 30px;
+    font-size: 1.7rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.6rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 710px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 802px;
+  }
+  .project1__category3 {
+    margin-bottom: 314px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .project1__wrapper {
+    margin-top: 230px;
+  }
+
+  .project1__text--title {
+    top: 30px;
+    font-size: 1.6rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.5rem;
+  }
+
+  .project1__category2 {
+    margin-bottom: 341px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 346px;
+  }
+
+  /* 저녁 먹구와서 이미지 크기랑 옆 마진 크기 다루기! */
+}
+@media screen and (max-width: 302px) {
+  .project1__text--title {
+    top: 25px;
+    font-size: 1.5rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 299px) {}
