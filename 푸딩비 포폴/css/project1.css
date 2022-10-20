@@ -472,7 +472,7 @@
 
 @media screen and (max-width: 348px) {
   .project1__wrapper {
-    margin: 260px 20px;
+    margin: 210px 20px;
   }
 
   .project1__text--title {
@@ -485,17 +485,23 @@
   }
 
   .project1__category--wrapper {
-    margin-top: 730px;
+    margin-top: 720px;
   }
 
   .project1__sentence--wrapper {
-    margin-top: 822px;
+    margin-top: 812px;
   }
 
   .project1__gif {
     top: 400px;
     max-width: 270px;
     height: 570px;
+  }
+}
+
+@media screen and (max-width: 342px) {
+  .project1__category3 {
+    margin-bottom: 314px;
   }
 }
 
@@ -520,14 +526,24 @@
   .project1__sentence--wrapper {
     margin-top: 802px;
   }
+
   .project1__category3 {
     margin-bottom: 314px;
   }
 }
 
 @media screen and (max-width: 325px) {
+
   .project1__wrapper {
-    margin-top: 230px;
+    margin: 190px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 640px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 732px;
   }
 
   .project1__text--title {
@@ -546,10 +562,55 @@
   .project1__category3 {
     margin-bottom: 346px;
   }
+  
 
-  /* 저녁 먹구와서 이미지 크기랑 옆 마진 크기 다루기! */
+  .project1__gif {
+    top: 370px;
+    max-width: 250px;
+    height: 540px;
+  }
+
 }
+
+@media screen and (max-width: 325px) {
+  .project1__category3 {
+    margin-bottom: 316px;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  .project1__wrapper {
+    margin: 180px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 630px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 722px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 343px;
+  }
+}
+
+
+
 @media screen and (max-width: 302px) {
+  .project1__wrapper {
+    margin: 160px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 590px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 682px;
+  }
+  
   .project1__text--title {
     top: 25px;
     font-size: 1.5rem;
@@ -557,7 +618,85 @@
 
   .project1__text--subtitle {
     font-size: 1.4rem;
+  }  
+  
+  .project1__gif {
+    top: 350px;
+    max-width: 230px;
+    height: 520px;
   }
 }
 
-@media screen and (max-width: 299px) {}
+@media screen and (max-width: 299px) {
+  .project1__wrapper {
+    margin: 180px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 600px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 692px;
+  }
+
+  .project1__category2 {
+    margin-bottom: 370px;
+  }
+
+  .project1__gif {
+    top: 350px;
+  }
+}
+
+@media screen and (max-width: 292px) {
+  .project1__category2 {
+    margin-bottom: 430px;
+  }
+}
+
+@media screen and (max-width: 287px) {
+  .project1__wrapper {
+    margin: 170px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 560px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 652px;
+  }
+
+  .project1__text--title { 
+    position: absolute;
+    width: 120px;
+    top: 25px;
+    left: 50%;
+  }
+
+  .project1__text--subtitle {
+    position: absolute;
+    width: 95px;
+  } 
+  .project1__gif {
+    top: 320px;
+    max-width: 210px;
+    height: 450px;
+  }
+}
+
+
+@media screen and (max-width: 278px) {
+  .project1__category--wrapper {
+    margin-top: 550px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 642px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 375px;
+  }
+}
