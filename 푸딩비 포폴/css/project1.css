@@ -7,7 +7,8 @@
   margin: 250px 0;
   color: #fff;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
+  z-index: 0; /* 왜 코딩효과 코드링크가 안 되지ㅠㅠ */
 }
 
 .project1__title--wrapper {
@@ -20,6 +21,10 @@
   /* left: 0; */
   font-family: 'NanumMongDor';
   font-size: 2rem;
+  background: linear-gradient(to right top, #7748ff, #8b46d2);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 
 .project1__text--title {

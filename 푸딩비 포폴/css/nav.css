@@ -33,7 +33,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  /* z-index: 15; */
+  z-index: 15; /* z-index 살리니까 되네! */
 }
 
 .side__wrapper {
@@ -93,6 +93,7 @@
   width: 50px;
   height: 45px;
   position: fixed;
+  z-index: 200; /* 코딩효과, 코드링크 안 눌림 방지 */
 }
 
 .nav__hamburger {
